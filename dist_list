@@ -1,0 +1,12 @@
+
+INSERT INTO `districts` (`id`, `d_id`,`name`) VALUES
+(1, 'Adilabad'),
+(2, 'Hyderabad'),
+(3, 'Karimnagar'),
+(4, 'Khammam'),
+(5, 'MahabubNagar'),
+(6, 'Medak'),
+(7, 'Nalgonda'),
+(8, 'Nizamabad'),
+(9, 'RangaReddy'),
+(10, 'Warangal');

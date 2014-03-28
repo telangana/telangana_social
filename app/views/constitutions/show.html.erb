@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>C:</strong>
+  <%= @constitution.c_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @constitution.name %>
+</p>
+
+<%= link_to 'Edit', edit_constitution_path(@constitution) %> |
+<%= link_to 'Back', constitutions_path %>

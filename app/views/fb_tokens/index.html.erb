@@ -1,0 +1,29 @@
+<h1>Listing fb_tokens</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Access token</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fb_tokens.each do |fb_token| %>
+      <tr>
+        <td><%= fb_token.name %></td>
+        <td><%= fb_token.access_token %></td>
+        <td><%= link_to 'Show', fb_token %></td>
+        <td><%= link_to 'Edit', edit_fb_token_path(fb_token) %></td>
+        <td><%= link_to 'Destroy', fb_token, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Fb token', new_fb_token_path %>

@@ -1,0 +1,29 @@
+<h1>Listing constitutions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>C</th>
+      <th>Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @constitutions.each do |constitution| %>
+      <tr>
+        <td><%= constitution.c_id %></td>
+        <td><%= constitution.name %></td>
+        <td><%= link_to 'Show', constitution %></td>
+        <td><%= link_to 'Edit', edit_constitution_path(constitution) %></td>
+        <td><%= link_to 'Destroy', constitution, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Constitution', new_constitution_path %>

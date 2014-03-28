@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  fbprofile_id: MyString
+  refernces: 
+
+two:
+  name: MyString
+  fbprofile_id: MyString
+  refernces: 

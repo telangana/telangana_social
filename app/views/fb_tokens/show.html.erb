@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @fb_token.name %>
+</p>
+
+<p>
+  <strong>Access token:</strong>
+  <%= @fb_token.access_token %>
+</p>
+
+<%= link_to 'Edit', edit_fb_token_path(@fb_token) %> |
+<%= link_to 'Back', fb_tokens_path %>

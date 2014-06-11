@@ -6,7 +6,6 @@ namespace :sai do
       ACCESS_TOKEN = FbToken.last.access_token
 
       @user = FbGraph::User.fetch("saikiran.mothe", :access_token => ACCESS_TOKEN)
-      require 'ruby-hackernews'
       
 
  end

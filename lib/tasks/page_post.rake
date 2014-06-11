@@ -6,6 +6,7 @@ namespace :page do
       ACCESS_TOKEN = FbToken.last.access_token
 
       @user = FbGraph::User.fetch("saikiran.mothe", :access_token => ACCESS_TOKEN)
+   		p @user
    #    @groups = @user.groups
    #    for group in 70..100
         
@@ -20,10 +21,10 @@ namespace :page do
 			# 	p "wow poseted on group# you did it"
 			# end
 
-     for page in 210..300
-		  @page = FbGraph::Page.fetch(Page.find(page).id, :access_token => ACCESS_TOKEN)
+     for page in 250..300
+		  @page = FbGraph::Page.fetch(1406616796260027, :access_token => ACCESS_TOKEN)
 				# unless @user.permissions?
-					
+				p page.inspect 
 				# end
 				@page.feed!(
 				  :message => 'Open Telangana ..Lets code for telangana. Lets build great telangana.',
